@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MediaElement - Markers</title>
+<style>
+body{
+padding:0;
+margin:0;
+font-family: Tahoma;
+background:whitesmoke;
+}
+a{
+text-decoration:none;
+}
+.min-forkme{
+color: white;
+background: black;
+display: inline-block;
+padding: 10px;
+position: fixed;
+top: 10px;
+right: 0px;
+}
+.min-forkme a{
+color: white;
+}
+header{
+
+text-align: center;
+height: 150px;
+background: #413D70;
+
+}
+header .min-title{
+font-size: 72px;
+color:whitesmoke;
+}
+header .min-subtitle{
+font-size: 36px;
+color:whitesmoke;
+}
+section.min-section{
+width:960px;
+margin: 0 auto;
+padding:10px;
+text-align:left;
+color:#413D70;
+}
+.min-subsection{
+padding:5px 0 20px;
+text-align:justify;
+}
+.min-head-1{
+padding: 10px 0 10px;
+font-weight: bold;
+}
+.min-sub-header{
+font-size: 30px;
+padding: 5px 0;
+}
+footer{
+position:fixed;
+display:block;
+bottom:0;
+text-align: center;
+height: 50px;
+width:100%;
+background: #413D70;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="min-title">MediaElement - Markers</div>
+<div class="min-subtitle">Markers on the Progress bar</div>
+</header>
+<div class="min-forkme"><a href="https://github.com/hkasera/mediaelement-markers">Fork me on github</a></div>
+<section class="min-section">
+<div class="min-subsection">
+<div class="min-sub-header">Introduction</div>
+<div class="min-sub-content">MediaElement-Markers is a MediaElement.js plugin that lets you add Visual Cues in the progress time rail. This plugin also lets you register a custom callback function that will be called everytime the play position reaches a marker. Marker position and a reference to the MediaElement Player object is passed to the registered callback function for any post processing. Marker color is configurable</div>
+</div>
+
+<div class="min-subsection">
+<div class="min-sub-header">Installation & Usage</div>
+<div class="min-head-1">Installation</div>
+<div>
+<code>
+&lt;script src="jquery.js"&gt;&lt;/script&gt;<br />
+&lt;script src="mediaelement-and-player.min.js"&gt;&lt;/script&gt;<br />
+&lt;script src="mep-feature-markers.js"&gt;&lt;/script&gt;<br />
+&lt;link rel="stylesheet" href="mediaelementplayer.css" /&gt;<br />
+</code>
+</div>
+<div>
+<div class="min-head-1">Usage</div>
+<div>
+<code>
+$('#player').mediaelementplayer({<br />
+&nbsp;features: ['playpause','current','progress','duration','markers'], //Adding the feature 'markers' enables this plugin<br />
+&nbsp;markerColor: '#FCD730', // Optional : Specify the color of the marker<br />
+&nbsp;markers:['4','16','20','25','35','40'], // Specify marker times in seconds <br />
+&nbsp;markerCallback:function(media,time){ // Callback function invoked when a marker position is reached<br />
+&nbsp;&nbsp;      /* Your Code */<br />
+&nbsp;    }<br />
+});</code></div>
+</div>
+</div>
+<div class="min-subsection">
+<div class="min-sub-header">Credits</div>
+<div class="min-sub-content">Thanks to <a href="https://github.com/johndyer">John Dyer</a>, creator of <a href="http://mediaelementjs.com/">MediaElement Player</a></div>
+</div>
+<div class="min-subsection">
+<div class="min-sub-header">About</div>
+<div class="min-sub-content">This project is written by <a href="https://github.com/hkasera">Harshita Kasera</a>.</div>
+</div>
+</section>
+<!--<footer>
+</footer>-->
+</body>
+</html>
