@@ -1,121 +1,116 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>MediaElement - Markers</title>
-<style>
-body{
-padding:0;
-margin:0;
-font-family: Tahoma;
-background:whitesmoke;
-}
-a{
-text-decoration:none;
-}
-.min-forkme{
-color: white;
-background: black;
-display: inline-block;
-padding: 10px;
-position: fixed;
-top: 10px;
-right: 0px;
-}
-.min-forkme a{
-color: white;
-}
-header{
 
-text-align: center;
-height: 150px;
-background: #413D70;
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Mediaelement-markers : Visual Markers on the progress bar of MediaElement HTML5 Player" />
 
-}
-header .min-title{
-font-size: 72px;
-color:whitesmoke;
-}
-header .min-subtitle{
-font-size: 36px;
-color:whitesmoke;
-}
-section.min-section{
-width:960px;
-margin: 0 auto;
-padding:10px;
-text-align:left;
-color:#413D70;
-}
-.min-subsection{
-padding:5px 0 20px;
-text-align:justify;
-}
-.min-head-1{
-padding: 10px 0 10px;
-font-weight: bold;
-}
-.min-sub-header{
-font-size: 30px;
-padding: 5px 0;
-}
-footer{
-position:fixed;
-display:block;
-bottom:0;
-text-align: center;
-height: 50px;
-width:100%;
-background: #413D70;
-}
-</style>
-</head>
-<body>
-<header>
-<div class="min-title">MediaElement - Markers</div>
-<div class="min-subtitle">Markers on the Progress bar</div>
-</header>
-<div class="min-forkme"><a href="https://github.com/hkasera/mediaelement-markers">Fork me on github</a></div>
-<section class="min-section">
-<div class="min-subsection">
-<div class="min-sub-header">Introduction</div>
-<div class="min-sub-content">MediaElement-Markers is a MediaElement.js plugin that lets you add Visual Cues in the progress time rail. This plugin also lets you register a custom callback function that will be called everytime the play position reaches a marker. Marker position and a reference to the MediaElement Player object is passed to the registered callback function for any post processing. Marker color is configurable</div>
-</div>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-<div class="min-subsection">
-<div class="min-sub-header">Installation & Usage</div>
-<div class="min-head-1">Installation</div>
-<div>
-<code>
-&lt;script src="jquery.js"&gt;&lt;/script&gt;<br />
-&lt;script src="mediaelement-and-player.min.js"&gt;&lt;/script&gt;<br />
-&lt;script src="mep-feature-markers.js"&gt;&lt;/script&gt;<br />
-&lt;link rel="stylesheet" href="mediaelementplayer.css" /&gt;<br />
-</code>
-</div>
-<div>
-<div class="min-head-1">Usage</div>
-<div>
-<code>
-$('#player').mediaelementplayer({<br />
-&nbsp;features: ['playpause','current','progress','duration','markers'], //Adding the feature 'markers' enables this plugin<br />
-&nbsp;markerColor: '#FCD730', // Optional : Specify the color of the marker<br />
-&nbsp;markers:['4','16','20','25','35','40'], // Specify marker times in seconds <br />
-&nbsp;markerCallback:function(media,time){ // Callback function invoked when a marker position is reached<br />
-&nbsp;&nbsp;      /* Your Code */<br />
-&nbsp;    }<br />
-});</code></div>
-</div>
-</div>
-<div class="min-subsection">
-<div class="min-sub-header">Credits</div>
-<div class="min-sub-content">Thanks to <a href="https://github.com/johndyer">John Dyer</a>, creator of <a href="http://mediaelementjs.com/">MediaElement Player</a></div>
-</div>
-<div class="min-subsection">
-<div class="min-sub-header">About</div>
-<div class="min-sub-content">This project is written by <a href="https://github.com/hkasera">Harshita Kasera</a>.</div>
-</div>
-</section>
-<!--<footer>
-</footer>-->
-</body>
+    <title>Mediaelement-markers</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hkasera/mediaelement-markers">View on GitHub</a>
+
+          <h1 id="project_title">Mediaelement-markers</h1>
+          <h2 id="project_tagline">Visual Markers on the progress bar of MediaElement HTML5 Player</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/hkasera/mediaelement-markers/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/hkasera/mediaelement-markers/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="mediaelement-markers---markers-on-the-progress-bar" class="anchor" href="#mediaelement-markers---markers-on-the-progress-bar"><span class="octicon octicon-link"></span></a>MediaElement-Markers - Markers on the Progress bar</h1>
+
+<p><img src="https://raw.github.com/hkasera/mediaelement-markers/master/markers.png" alt="MediaElement marker" title="Marker"></p>
+
+<p><strong>Author</strong>   - Harshita Kasera<br><strong>License</strong>   - GPLv2/MIT </p>
+
+<h1>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>MediaElement-Markers is a <code>MediaElement.js</code> plugin that lets you add <strong><em>Visual Cues</em></strong> in the progress time rail. This plugin also lets you register a custom callback function that will be called everytime the play position reaches a marker. Marker position and a reference to the MediaElement Player object is passed to the registered callback function for any post processing. Marker color is configurable. </p>
+
+<h1>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h1>
+
+<p><a href="http://jsfiddle.net/hkasera/a3dBe/11/">Click here</a> to see a working demo of the plugin.</p>
+
+<h1>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h1>
+
+<p>Thanks to <a href="https://github.com/johndyer">John Dyer</a>, creator of <a href="http://mediaelementjs.com/">MediaElement Player</a></p>
+
+<h1>
+<a name="installation--usage" class="anchor" href="#installation--usage"><span class="octicon octicon-link"></span></a>Installation &amp; Usage</h1>
+
+<h3>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
+
+<pre><code>&lt;script src="jquery.js"&gt;&lt;/script&gt;
+&lt;script src="mediaelement-and-player.min.js"&gt;&lt;/script&gt;
+&lt;script src="mep-feature-markers.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="mediaelementplayer.css" /&gt;
+</code></pre>
+
+<h3>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<pre><code>$('#player').mediaelementplayer({
+    features: ['playpause','current','progress','duration','markers'], //Adding the feature 'markers' enables this plugin
+    markerColor: '#FCD730', // Optional : Specify the color of the marker
+    markers:['4','16','20','25','35','40'], // Specify marker times in seconds 
+    markerCallback:function(media,time){ // Callback function invoked when a marker position is reached
+       /* Your Code */
+    }
+});
+</code></pre>
+
+<h1>
+<a name="testing" class="anchor" href="#testing"><span class="octicon octicon-link"></span></a>Testing</h1>
+
+<pre><code>*IE7 - Flash 
+*IE8 - Flash
+IE9, IE10 - MP4
+Firefox - Ogv
+Chrome - Webm
+Safari - MP4
+</code></pre>
+
+<p><code>* Note</code> Markers will appear only after Play in IE7 and IE8 due to the limitation in Flash Player.</p>
+
+<h1>
+<a name="version-history" class="anchor" href="#version-history"><span class="octicon octicon-link"></span></a>Version History</h1>
+
+<p><em>2.0.0 (2013/04/03)</em><br>
+   Added fullscreen support</p>
+
+<p><em>1.0.0 (2013/01/14)</em><br>
+   Initial release</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Mediaelement-markers maintained by <a href="https://github.com/hkasera">hkasera</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
