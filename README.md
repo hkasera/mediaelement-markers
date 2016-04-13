@@ -1,4 +1,4 @@
-#MediaElement-Markers - Markers on the Progress bar
+# MediaElement Markers : Markers on the Progress bar
 
 ![MediaElement marker](https://raw.github.com/hkasera/mediaelement-markers/master/markers.png "Marker")
 
