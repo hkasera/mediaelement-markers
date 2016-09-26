@@ -10,8 +10,11 @@ __License__   - GPLv2/MIT
 
 MediaElement-Markers is a <code>MediaElement.js</code> plugin that lets you add ___Visual Cues___ in the progress time rail. This plugin also lets you register a custom callback function that will be called everytime the play position reaches a marker. Marker position and a reference to the MediaElement Player object is passed to the registered callback function for any post processing. Marker color is configurable. 
 
+This plugin is now [merged](https://github.com/johndyer/mediaelement/pull/1814) to the [Mediaelement repository](https://github.com/johndyer/mediaelement). 
+
 # Demo
 [Click here](http://jsfiddle.net/hkasera/a3dBe/11/) to see a working demo of the plugin.
+
 # Credits
 
 Thanks to [John Dyer](https://github.com/johndyer), creator of [MediaElement Player](http://mediaelementjs.com/)
