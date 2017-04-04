@@ -5,6 +5,8 @@
 __Author__   - Harshita Kasera  
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/hkasera/mediaelement-markers/blob/master/LICENSE)
 
+[Official plugin for Mediaelement.js](https://github.com/mediaelement/mediaelement-plugins/blob/master/docs/markers.md)
+
 # Introduction
 
 MediaElement-Markers is a <code>MediaElement.js</code> plugin that lets you add ___Visual Cues___ in the progress time rail. This plugin also lets you register a custom callback function that will be called everytime the play position reaches a marker. Marker position and a reference to the MediaElement Player object is passed to the registered callback function for any post processing. Marker color is configurable. 
