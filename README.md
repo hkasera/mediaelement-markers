@@ -3,8 +3,7 @@
 ![MediaElement marker](https://raw.github.com/hkasera/mediaelement-markers/master/markers.png "Marker")
 
 __Author__   - Harshita Kasera  
-__License__   - GPLv2/MIT 
-
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/hkasera/mediaelement-markers/blob/master/LICENSE)
 
 # Introduction
 
