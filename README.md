@@ -6,6 +6,7 @@ __Author__   - Harshita Kasera
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/hkasera/mediaelement-markers/blob/master/LICENSE)
 
 [Official plugin for Mediaelement.js](https://github.com/mediaelement/mediaelement-plugins/blob/master/docs/markers.md)
+[PR Link](https://github.com/mediaelement/mediaelement/pull/1814)
 
 # Introduction
 
